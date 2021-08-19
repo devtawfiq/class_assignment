@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding: 0;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+.header{
+    text-align: center;
+}
+.header ul{
+    background: rgb(255, 255, 255);
+
+    padding: 5px 0;
+}
+.header ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #48dbfb;
+    
+}
+.header ul li:hover{
+    background: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    padding: 2px;
+    position: relative;
+    transition: 0.4s;
+    font-family: 'Work Sans', sans-serif;
+}
+.header ul li a:hover{
+    color: #48dbfb;
+}
+.header ul li:hover a{
+    color: #48dbfb;
+}
+.header ul li:hover a::before{
+    width: 100%;
+   
+}
+.header ul li a::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-moz-transition: .4s;
+    transition: .4s;
+}
+.header ul li a:hover::before{
+    width: 100%;
+}
+
+/* -------- banner section----------- */
+
+.banner-section {
+    background: #48dbfb;
+    padding: 80px 0;
+    margin-top: -13px;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h4 {
+    font-size: 30px;
+    color: #f9f4f4;
+}
+.banner-content h1 {
+    font-size: 52px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+    color: #f4f4f4;
+}
+.banner-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ddd;
+    background: #fff;
+    padding: 13px 20px;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: 1;
+    position: relative;
+}
+.banner-content a:hover{
+    color: #fff;
+}
+.banner-content a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.banner-content a:hover::before{
+    width: 100%;
+}
+
+/* --------- about-section --------- */
+.contain{
+    width: 1100px;
+    margin: auto;
+}
+
+
+/* ------- image Galury ------- */
+
+.gallary-section {
+    padding: 80px 0 40px 0;
+    background: #f7f9f9;
+}
+.gallary-section .gallary-title{
+    text-align: center;
+}
+.gallary-section .gallary-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.gallary-section .gallary-title p {
+    margin-bottom: 80px;
+}
+.gallary-section .gallary-title {
+    text-align: center;
+}
+.gallary-section .gallary-img{
+    text-align: center;
+}
+.gallary-section .gallary-img .img {
+    display: inline-block;
+    width: 23%;
+    margin-right: 13px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.gallary-section .gallary-img .img img {
+    width: 100%;
+}
+.gallary-section .gallary-img .img4{
+    margin-right: 0;
+}
+.gallary-section .gallary-img .img8{
+    margin-right: 0;
+}
+.gallary-section .gallary-img .img img{
+    transition: 0.6s;
+}
+.gallary-section .gallary-img .img img.hover1:hover{
+    transform: rotate(360deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover2:hover{
+    transform: rotate(40deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover3:hover{
+    transform: rotate(-40deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover4:hover{
+    transform: rotate(-40deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover5:hover{
+    transform: rotate(35deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover6:hover{
+    transform: rotate(360deg);
+}
+.gallary-section .gallary-img .img img.hover7:hover{
+    transform: rotate(10deg)scale(1.2);
+}
+.gallary-section .gallary-img .img img.hover8:hover{
+    transform: rotate(-10deg)scale(1.2);
+}
+
+/* ----------testimonial-section 0----------- */
+.testimonial-section {
+    padding: 100px 0 20px 0;
+    background: #f7f9ff;
+}
+.testimonial-section .testimonial-content{
+    text-align: center;
+}
+.testimonial-section .testimonial-content h3 {
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif; 
+}
+.testimonial-section .testimonial-content p {
+    color: #555;
+    margin-bottom: 14px;
+}
+.buttom-section{}
+.mar{
+    display:inline-block;
+    margin-left: 18%;
+}
+.mar a {
+    padding: 10px 27px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    transition: .4s;
+    font-weight: 600;
+}
+.mar a:hover{
+    background-color: #33b0db;
+    color: #000;
+}
+.btn1 a {
+    transform: rotate(-31deg);
+}
+.btn1 a:hover{
+    transform: rotate(0);
+}
+.btn2 a {
+    transform: scale();
+}
+.btn2 a:hover{
+    transform: scale(1.2);
+}
+
+.btn3 a {
+    transform: rotate(31deg);
+}
+.btn3 a:hover{
+    transform: rotate(0);
+}
+
+.fotter {
+    padding: 15px 0;
+    background-color: #000;
+    text-align: center;
+}
+.fotter h6 {
+    color: #bcb0b0;
+    font-weight: 500;
+}
